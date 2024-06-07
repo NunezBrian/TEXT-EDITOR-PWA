@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: text-editor-backend
+    env: node
+    buildCommand: cd server && npm install
+    startCommand: npm start
+  - type: static
+    name: text-editor-frontend
+    env: static
+    buildCommand: cd client && npm run build
+    publishPath: client/build

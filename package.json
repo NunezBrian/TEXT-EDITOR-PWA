@@ -1,0 +1,11 @@
+{
+    "name": "text-editor-app",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+      "start": "npm run start --prefix server",
+      "build": "npm run build --prefix client",
+      "deploy": "npm run build --prefix client && cp -r client/build/* server/public/"
+    }
+  }
+  
