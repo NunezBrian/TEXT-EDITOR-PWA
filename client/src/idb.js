@@ -1,7 +1,7 @@
 import { openDB } from 'idb';
 
 const initDB = async () => {
-  const db = await openDB('text-editor', 1, {
+  const db = await openDB('jate', 1, {
     upgrade(db) {
       db.createObjectStore('content', { keyPath: 'id', autoIncrement: true });
     },

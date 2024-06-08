@@ -1,11 +1,6 @@
 {
-    "scripts": {
-      "build": "webpack --config webpack.config.js --mode production",
-      "deploy": "npm run build && cp -r build/* ../server/public/"
-    },
-    
-    "short_name": "TextEditor",
-    "name": "Text Editor App",
+    "short_name": "J.A.T.E",
+    "name": "Just Another Text Editor",
     "icons": [
       {
         "src": "favicon.ico",
@@ -25,7 +20,7 @@
     ],
     "start_url": ".",
     "display": "standalone",
-    "theme_color": "#000000",
+    "theme_color": "#225ca3",
     "background_color": "#ffffff"
   }
   
